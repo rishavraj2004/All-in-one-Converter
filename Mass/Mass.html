@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mass Converter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="main-container">
+        <!-- Navigation Section -->
+        <div class="parent">
+            <button onclick="goBack()" class="nav-btn">&leftarrow;</button>
+            <h3 class="nav-heading">Mass</h3>
+        </div>
+
+        <!-- Display-section -->
+        <div class="main-display">
+            <div class="display-container">
+                <select class="unit-selector input-unit">
+                    <option value="kg" selected>Kilogram</option>
+                    <option value="g">Gram</option>
+                    <option value="mg">Milligram</option>
+                    <option value="q">Quintal</option>
+                    <option value="lb">Pound</option>
+                    <option value="t">Tonne</option>
+                    <option value="ug">Microgram</option>
+                </select>
+                <input type="number" class="input" readonly>
+
+            </div>
+        </div>
+        <!-- Display Section -->
+        <div class="main-display">
+            <div class="display-container">
+                <select class="unit-selector output-unit">
+                    <option value="kg">Kilogram</option>
+                    <option value="g" selected>Gram</option>
+                    <option value="mg">Milligram</option>
+                    <option value="q">Quintal</option>
+                    <option value="lb">Pound</option>
+                    <option value="t">Tonne</option>
+                    <option value="ug">Microgram</option>
+                </select>
+                <div class="display-show"></div>
+            </div>
+        </div>
+
+        <!-- Keypad Section -->
+
+
+        <div class="container">
+            <div class="keypad">
+                <button class="btns">7</button>
+                <button class="btns">8</button>
+                <button class="btns">9</button>
+                <button class="btns">4</button>
+                <button class="btns">5</button>
+                <button class="btns">6</button>
+                <button class="btns">1</button>
+                <button class="btns">2</button>
+                <button class="btns">3</button>
+                <button class="btns">0</button>
+                <button class="btns" id="dark-btn">
+                    <ion-icon name="moon-outline" class="dark-icon"></ion-icon>
+                    <ion-icon name="sunny-outline" class="light-icon"></ion-icon>
+                </button>
+
+            </div>
+            <div class="side-buttons">
+                <button id="allclear">AC</button>
+                <button id='backspace'><span class="backspace-icon">⌫</span></button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --hover-color: #333;
+    --side-button: #111;
+}
+
+/* -------DARK MODE SECTION--------- */
+.dark-mode {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --hover-color: rgb(218, 218, 218);
+    --side-button: #e9ecef;
+}
+
+.dark-icon {
+    display: none;
+}
+
+.dark-mode .dark-icon {
+    display: block;
+}
+
+.dark-mode .light-icon {
+    display: none;
+}
+
+#dark-btn {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------DARK MODE END----------- */
+
+
+.main-container {
+    border: 2px solid #333;
+    padding: 20px;
+}
+
+
+body {
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(4, 70px);
+    gap: 10px;
+}
+
+.keypad button,
+.side-buttons button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.keypad button:hover,
+.side-buttons button:hover {
+    background-color: var(--hover-color);
+}
+
+.side-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.side-buttons button {
+    background-color: var(--side-button);
+    width: 70px;
+    height: 140px;
+    border-radius: 35px;
+    color: orange;
+    font-weight: bold;
+}
+
+.backspace-icon {
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* NAV*/
+.parent {
+    border: solid 2px var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    background-color: var(--primary-color);
+
+}
+
+
+.nav-btn {
+    border: none;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 4px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+.nav-btn:hover {
+    cursor: pointer;
+}
+
+.nav-heading {
+    color: var(--secondary-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+/* Display */
+.main-display {
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.unit-selector {
+    margin-top: 2px;
+    height: 36px;
+    width: 120px;
+    border-radius: 6px;
+    border: solid 2px var(--primary-color);
+    font-size: medium;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+
+}
+
+.input {
+    height: 36px;
+    width: 180px;
+    border: var(--primary-color) 2px solid;
+    text-align: right;
+    font-size: medium;
+    font-weight: bold;
+    color: orange;
+    background-color: var(--primary-color);
+}
+
+.display-show {
+    height: 36px;
+    width: 180px;
+    border: solid 2px var(--primary-color);
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: right;
+    padding-right: 8px;
+    padding-top: 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    color: orange;
+    background-color: var(--primary-color);
+}
+
+.display-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
