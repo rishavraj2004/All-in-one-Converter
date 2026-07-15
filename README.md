@@ -94,7 +94,7 @@ Or use VS Code Live Server for a better development experience.
 - Better animations
 
 
-## Deployed on Netlify
+## 🔗 Deployed on Netlify
 - https://all-converter.netlify.app/
 
 
